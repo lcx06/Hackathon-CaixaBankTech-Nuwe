@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+ion-header::after {
+    background-image: none;
+}
+
+.logo-native {
+    left: 20px;
+}
+
+.logo-neo {
+    position: absolute;
+    left: 2.42%;
+    top: 36.36%;
+    bottom: 36.36%;
+}
+
+.logo-banks {
+    position: absolute;
+    width: 145px;
+    height: 24px;
+    left: 115px;
+    top: 22px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    /* or 67% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    color: #4A35C5;
+}
+
+.logo-banks-native {
+    left: 80px;
+}
