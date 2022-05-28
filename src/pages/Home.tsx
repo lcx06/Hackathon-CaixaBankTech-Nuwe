@@ -1,4 +1,4 @@
-import {IonBreadcrumb, IonBreadcrumbs, IonCol, IonGrid, IonRow} from '@ionic/react';
+import {IonBreadcrumb, IonBreadcrumbs, IonCol, IonGrid, IonRow, useIonToast} from '@ionic/react';
 import './Home.css';
 import {Capacitor} from "@capacitor/core";
 import {getRouterInfo} from "../router";
@@ -11,13 +11,15 @@ import WeeklyExpensesCard from "../components/WeeklyExpensesCard";
 
 const Home: React.FC = () => {
     const route = getRouterInfo('/home');
+    const [present] = useIonToast();
 
     const [transactions, setTransactions] = useState([]);
 
     useEffect(() => {
-        // TODO Add catch
-        getTransactions().then((res) => setTransactions(res.data));
-    }, [])
+        getTransactions()
+            .then((res) => setTransactions(res.data))
+            .catch(() => present('There was an error loading the transactions', 3000));
+    }, [present])
 
     return (<>
         {!Capacitor.isNativePlatform() && <IonBreadcrumbs>
