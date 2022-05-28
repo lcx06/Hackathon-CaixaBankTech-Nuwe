@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-ion-header::after {
-    background-image: none;
-}
-
+/* Logo */
 .logo-native {
     left: 20px;
 }
@@ -38,4 +35,57 @@ ion-header::after {
 
 .logo-banks-native {
     left: 80px;
+}
+
+/* Toolbar opciones */
+.toolbar-right {
+    position: absolute;
+    right: 33px;
+    top: 16px;
+    background-color: transparent;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    z-index: 100;
+    bottom: 34px;
+    height: 62px;
+    left: 2.67%;
+    right: 2.67%;
+    background-color: #2D14C4;
+    backdrop-filter: blur(82px);
+    border-radius: 31px;
+}
+
+.footer ion-grid {
+    height: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+}
+
+.footer-items {
+    color: rgba(234, 234, 234, 0.75);
+    height: 100%;
+}
+
+.footer-items .selected {
+    color: #f4f4f4;
+}
+
+.footer-items ion-col {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    transition: background-color 0.2s ease-out;
+}
+
+.footer-items ion-col:active {
+    background-color: rgba(203, 203, 203, 0.4);
 }
