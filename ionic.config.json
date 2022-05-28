@@ -1,0 +1,7 @@
+{
+  "name": "caixabank_hackathon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
