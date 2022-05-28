@@ -1,15 +1,14 @@
-import {IonHeader, IonTitle, IonToolbar} from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import {IonBreadcrumb, IonBreadcrumbs} from '@ionic/react';
 import './Home.css';
+import {Capacitor} from "@capacitor/core";
 
 const Home: React.FC = () => {
     return (<>
-        <IonHeader collapse="condense">
-            <IonToolbar>
-                <IonTitle size="large">Blank</IonTitle>
-            </IonToolbar>
-        </IonHeader>
-        <ExploreContainer/>
+        {!Capacitor.isNativePlatform() && <IonBreadcrumbs>
+            <IonBreadcrumb>
+                Dashboard
+            </IonBreadcrumb>
+        </IonBreadcrumbs>}
     </>);
 };
 

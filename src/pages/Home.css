@@ -1,0 +1,11 @@
+
+/* Breadcrumbs */
+ion-breadcrumbs {
+    background: #F5F5F5;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px;
+}
