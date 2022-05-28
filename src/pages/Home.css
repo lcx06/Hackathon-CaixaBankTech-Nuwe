@@ -9,3 +9,20 @@ ion-breadcrumbs {
     align-items: center;
     padding-left: 16px;
 }
+
+.component-header {
+    margin-left: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #00093E;
+}
+
+.component-header h4 {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.component-header span {
+    font-size: 14px;
+    line-height: 24px;
+}

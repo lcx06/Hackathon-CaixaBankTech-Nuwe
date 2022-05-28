@@ -1,9 +1,19 @@
-import React, {ReactElement} from "react";
+import React, {FunctionComponent, ReactElement} from "react";
 import {Redirect, Route} from "react-router-dom";
 import Dashboard from "../layout/Dashboard";
 import Home from "../pages/Home";
 
-const routes = [
+interface AppRoute {
+    path: string;
+    title?: string;
+    component?: FunctionComponent;
+    breadcrumbs?: string[];
+    content_title?: string;
+    content_subtitle?: string;
+    redirect?: string;
+}
+
+const routes: AppRoute[] = [
     {
         path: '/home',
         title: 'Dashboard',
@@ -30,6 +40,19 @@ function getRenderedRoutes(): ReactElement[] {
         </Route>)
     }
     return result;
+}
+
+export function getRouterInfo(path: string): AppRoute {
+    for (const route of routes) {
+        if (route.path === path) return route;
+    }
+    return {
+        path,
+        title: '',
+        breadcrumbs: [],
+        content_title: '',
+        content_subtitle: ''
+    };
 }
 
 export default getRenderedRoutes;
