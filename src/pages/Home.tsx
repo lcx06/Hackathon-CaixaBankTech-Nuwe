@@ -7,6 +7,7 @@ import {getTransactions} from "../api/transactions";
 import {useEffect, useState} from "react";
 import TransactionGroup from "../components/TransactionGroup";
 import ConversionCard from "../components/ConversionCard";
+import WeeklyExpensesCard from "../components/WeeklyExpensesCard";
 
 const Home: React.FC = () => {
     const route = getRouterInfo('/home');
@@ -40,7 +41,7 @@ const Home: React.FC = () => {
         { /* Content web */}
         {!Capacitor.isNativePlatform() && <IonGrid>
             <IonRow>
-                <IonCol>
+                <IonCol sizeMd={'4'}>
                     <IonRow>
                         <TransactionGroup transactions={transactions}/>
                     </IonRow>
@@ -49,8 +50,8 @@ const Home: React.FC = () => {
                     </IonRow>
 
                 </IonCol>
-                <IonCol>
-
+                <IonCol sizeMd={'8'}>
+                    <WeeklyExpensesCard />
                 </IonCol>
             </IonRow>
         </IonGrid>}

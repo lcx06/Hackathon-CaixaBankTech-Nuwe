@@ -1,0 +1,54 @@
+.revenue-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9C9C9C;
+    padding: 0;
+}
+
+.revenue-total {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: xx-large !important;
+    line-height: 132%;
+    color: #333333;
+    padding: 0;
+    margin: 0;
+}
+
+.revenue-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4AAF05;
+}
+
+.we-header {
+    display: flex;
+    flex-direction: row;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.we-time-picker {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+
+    color: #333333;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.we-time-picker:hover {
+    background-color: #E5E5E5;
+}
+
+.we-time-picker-icon {
+    margin-left: 4px;
+}
