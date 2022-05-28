@@ -37,7 +37,8 @@ function getChartOptions(min: number, max: number): ApexOptions {
         },
         yaxis: {
             min,
-            max
+            max,
+            tickAmount: 5
         }
     }
 }
@@ -62,13 +63,13 @@ const LastYearTransactions: React.FC<ContainerProps> = ({ transactions }) => {
             }
         }
         setSeries(monthly);
-        setMin(Math.min(Math.min(...monthly) - 5, 0));
+        setMin(Math.max(Math.min(...monthly) - 5, 0));
         setMax(Math.max(...monthly) + 10);
     }, [transactions]);
 
     return (
         <IonCard>
-            <IonCardHeader>
+            <IonCardHeader className={"lty-header"}>
                 <IonCardTitle>Transactions Last Year</IonCardTitle>
             </IonCardHeader>
             <IonCardContent className={"lty-content"}>
@@ -85,7 +86,7 @@ const LastYearTransactions: React.FC<ContainerProps> = ({ transactions }) => {
                 <ReactApexChart options={getChartOptions(min, max)} series={[{
                     name: "Transactions",
                     data: series
-                }]} height={184}/>
+                }]} height={200}/>
             </IonCardContent>
         </IonCard>
     );
