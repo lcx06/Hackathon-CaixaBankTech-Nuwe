@@ -84,7 +84,7 @@ const ConversionCard: React.FC<ContainerProps> = ({transactions}) => {
     }, [transactions]);
 
     return (
-        <IonCard>
+        <IonCard className={"w-full h-full"}>
             <IonCardHeader className={"conversion-header"}>
                 <IonCardTitle>Conversion</IonCardTitle>
                 <div className={"conversion-right-util conversion-icon"}>
@@ -92,7 +92,7 @@ const ConversionCard: React.FC<ContainerProps> = ({transactions}) => {
                 </div>
             </IonCardHeader>
             <IonCardContent>
-                <ReactApexChart options={getChartOptions(series, labels)} series={series} id={"conversion-card"} type={"pie"} width={300}/>
+                <ReactApexChart options={getChartOptions(series, labels)} series={series} id={"conversion-card"} type={"pie"} height={525} width={'100%'}/>
             </IonCardContent>
         </IonCard>
     );

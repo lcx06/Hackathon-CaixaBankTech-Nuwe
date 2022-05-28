@@ -1,7 +1,13 @@
+.transaction-group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 .transaction-card {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    width: 150px;
+    width: 100%;
 }
 
 .transaction-card-content {
@@ -30,4 +36,5 @@
     font-size: 12px;
     line-height: 12px;
     text-transform: uppercase;
+    color: #999999;
 }
