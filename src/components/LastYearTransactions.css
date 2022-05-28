@@ -10,3 +10,8 @@
 .lty-header {
     padding-bottom: 0;
 }
+
+.lty-header ion-card-title {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
