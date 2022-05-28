@@ -14,7 +14,7 @@ const Dashboard: React.FC<ContainerProps> = (props) => {
     return (
         <IonPage>
             <IonHeader className={"ion-no-border"}>
-                <IonToolbar className={Capacitor.isNativePlatform() ? "logo-native" : ""}>
+                <IonToolbar className={"logo-toolbar"}>
                     <img className={"logo-neo"} src={"/assets/icon/logo_first.png"} alt={"Logo"} />
                     <span className={"logo-banks " + (Capacitor.isNativePlatform() ? "logo-banks-native" : "")}>BANKS</span>
                     {!Capacitor.isNativePlatform() && <div className={"toolbar-right"}>
