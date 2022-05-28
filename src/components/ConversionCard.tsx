@@ -41,7 +41,7 @@ function getChartOptions(series: Array<number>, labels: Array<string>): ApexOpti
         tooltip: {
             y: {
                 title: {
-                    formatter(seriesName: string): string {
+                    formatter(_seriesName: string): string {
                         return '';
                     }
                 },
