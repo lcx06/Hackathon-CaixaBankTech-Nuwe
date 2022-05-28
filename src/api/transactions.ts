@@ -3,7 +3,8 @@ import {ApiResult} from "./index";
 
 export interface Transaction {
     date: Date,
-    amount: number
+    amount: number,
+    type: string,
 }
 
 export function getTransactions(): Promise<ApiResult> {
