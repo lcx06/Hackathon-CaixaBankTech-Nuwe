@@ -5,6 +5,7 @@ import {getRouterInfo} from "../router";
 import LastYearTransactions from "../components/LastYearTransactions";
 import {getTransactions} from "../api/transactions";
 import {useEffect, useState} from "react";
+import TransactionGroup from "../components/TransactionGroup";
 
 const Home: React.FC = () => {
     const route = getRouterInfo('/home');
@@ -28,6 +29,7 @@ const Home: React.FC = () => {
             <h4>{route.content_title}</h4>
             <span>{route.content_subtitle}</span>
         </div>}
+        <TransactionGroup transactions={transactions} />
         <LastYearTransactions transactions={transactions} />
     </>);
 };

@@ -1,0 +1,33 @@
+.transaction-card {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 150px;
+}
+
+.transaction-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-card-title {
+    color: #171725;
+    font-weight: 700;
+    size: 15px;
+    line-height: 20px;
+}
+
+.transaction-card-number {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #6979f8;
+    margin-bottom: 13px;
+    margin-top: 13px;
+}
+
+.transaction-card-time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
