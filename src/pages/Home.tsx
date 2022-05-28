@@ -29,8 +29,10 @@ const Home: React.FC = () => {
             <h4>{route.content_title}</h4>
             <span>{route.content_subtitle}</span>
         </div>}
+        { /* Content */ }
         <TransactionGroup transactions={transactions} />
-        <LastYearTransactions transactions={transactions} />
+        {Capacitor.isNativePlatform() && <LastYearTransactions transactions={transactions} />}
+
     </>);
 };
 
