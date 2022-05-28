@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'dev.lcx06',
   appName: 'caixabank_hackathon',
   webDir: 'build',
   bundledWebRuntime: false
