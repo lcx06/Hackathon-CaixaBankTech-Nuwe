@@ -1,0 +1,9 @@
+{
+	"appId": "dev.lcx06",
+	"appName": "NeoBanks",
+	"webDir": "build",
+	"bundledWebRuntime": false,
+	"server": {
+		"url": "http://192.168.0.19:8100"
+	}
+}
