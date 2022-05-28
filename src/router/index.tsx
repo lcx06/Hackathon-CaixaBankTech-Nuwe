@@ -34,7 +34,7 @@ function getRenderedRoutes(): ReactElement[] {
     const result = [];
     for (const route of routes) {
         // @ts-ignore
-        result.push(<Route exact path={route.path}>
+        result.push(<Route exact path={route.path} key={route.path}>
             { route.component && <Dashboard component={route.component} />}
             { route.redirect && <Redirect to={route.redirect} />}
         </Route>)
