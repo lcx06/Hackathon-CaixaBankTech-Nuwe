@@ -2,9 +2,19 @@ import {IonBreadcrumb, IonBreadcrumbs} from '@ionic/react';
 import './Home.css';
 import {Capacitor} from "@capacitor/core";
 import {getRouterInfo} from "../router";
+import LastYearTransactions from "../components/LastYearTransactions";
+import {getTransactions} from "../api/transactions";
+import {useEffect, useState} from "react";
 
 const Home: React.FC = () => {
     const route = getRouterInfo('/home');
+
+    const [transactions, setTransactions] = useState([]);
+
+    useEffect(() => {
+        // TODO Add catch
+        getTransactions().then((res) => setTransactions(res.data));
+    }, [])
 
     return (<>
         {!Capacitor.isNativePlatform() && <IonBreadcrumbs>
@@ -18,6 +28,7 @@ const Home: React.FC = () => {
             <h4>{route.content_title}</h4>
             <span>{route.content_subtitle}</span>
         </div>}
+        <LastYearTransactions transactions={transactions} />
     </>);
 };
 
