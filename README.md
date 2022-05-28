@@ -6,7 +6,7 @@ Un modelo de aplicación basado en React Native que sirve tanto para web como pa
 
 Este modelo permite demostrar la portabilidad de un proyecto tanto para web como
 para dispositivos moviles empleado React Native. Dentro de este proyecto se muestra
-una aplicación simple con varios graficos y ambientado para un sector financiero.
+una aplicación simple con varios gráficos y ambientado para un sector financiero.
 
 ## Uso
 
@@ -19,11 +19,11 @@ una aplicación simple con varios graficos y ambientado para un sector financier
 ```
 .
  ├── public                    # Archivos públicos
- ├── resources                 # Archivos para los dispositivos moviles (iOS, Android) y su icono
+ ├── resources                 # Archivos para los dispositivos móviles (iOS, Android) y su icono
  ├── src                       # La carpeta principal del proyecto y que contiene el código
  ├── .gitignore                # Archivos ignorados por Git
- ├── capacitor.config.ts       # Contiene los ajustes basicos del Capacitor
- ├── ionic.config.json         # Contiene los ajustes basicos de Ionic
+ ├── capacitor.config.ts       # Contiene los ajustes básicos del Capacitor
+ ├── ionic.config.json         # Contiene los ajustes básicos de Ionic
  ├── LICENSE                   # La licencia del proyecto
  ├── package.json              # Dependencias y scripts del proyecto (NPM)
  ├── README.md                 # Descripción del proyecto
@@ -74,11 +74,11 @@ Requisitos (iOS):
 
 Pasos para iniciar un servidor de desarrollo:
 
-- Ejecutar ``npm install`` para instalar todas las dependecias.
+- Ejecutar ``npm install`` para instalar todas las dependencias.
 - Ejecutar ``npm run start`` para iniciar un servidor de desarrollo.
 - Para construir el proyecto usar ``npm run build``.
 
-Si se quiere ejecutar para un dispositivo movil usar ``ionic cap open <android/ios>``
+Si se quiere ejecutar para un dispositivo móvil usar ``ionic cap open <android/ios>``
 y se abrirá una IDE para ejecutar/construir la app.
 
 En caso de querer encender un servidor de desarrollo tanto para web como para 
@@ -87,10 +87,10 @@ Android/iOS se puede emplear ``ionic cap run android -l --host=<IP_INTERNA>``
 ## Stack
 
 - Ionic - Empleado principalmente para la construcción del proyecto permitiendo 
-tener una aplicación web y movil desde el mismo código y que además cuenta con 
-una gran cantidad de librerias y soporte para libererias de ReactJS.
+tener una aplicación web y móvil desde el mismo código y que además cuenta con 
+una gran cantidad de librerías y soporte para libererías de ReactJS.
 - FontAwesome - Para los iconos de la página.
-- ApexCharts - Para la generación de graficos a partir de una seríe de datos.
+- ApexCharts - Para la generación de gráficos a partir de una serie de datos.
 
 ## Licencia
 
