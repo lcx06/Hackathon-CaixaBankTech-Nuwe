@@ -18,7 +18,7 @@ const Dashboard: React.FC<ContainerProps> = (props) => {
                     <img className={"logo-neo"} src={"/assets/icon/logo_first.png"} alt={"Logo"} />
                     <span className={"logo-banks " + (Capacitor.isNativePlatform() ? "logo-banks-native" : "")}>BANKS</span>
                     {!Capacitor.isNativePlatform() && <div className={"toolbar-right"}>
-                        <img src={"/assets/svg/cog.svg"} alt={"Cog"} width={22} height={22} />
+                        <object type="image/svg+xml" data={"/assets/svg/cog.svg"} className={"toolbar-right-icon"} />
                     </div>}
                 </IonToolbar>
             </IonHeader>

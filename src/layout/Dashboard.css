@@ -31,8 +31,20 @@
 .toolbar-right {
     position: absolute;
     right: 33px;
-    top: 16px;
+    top: 12px;
     background-color: transparent;
+}
+
+.toolbar-right-icon {
+    padding: 7px;
+    width: 33px;
+    height: 33px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.toolbar-right-icon:hover {
+    background-color: #e8e8e8;
 }
 
 /* Footer */
